@@ -5,7 +5,7 @@ public class Principal {
         String opcao = "";
         Calculadora calculadora = new Calculadora();
         while (!opcao.equals("9")) {
-            opcao = JOptionPane.showInputDialog("1 - Leitura\n2 - Soma \n3 - Subtração " + "\n4 - Produto \n5 - Divisão \n9 - Sair")
+            opcao = JOptionPane.showInputDialog("1 - Leitura\n2 - Soma \n3 - Subtração " + "\n4 - Produto \n5 - Divisão \n9 - Sair");
 
             switch (Integer.parseInt(opcao)) {
                 case 1:
@@ -21,7 +21,7 @@ public class Principal {
                 case 4:
                     JOptionPane.showMessageDialog(null, "Produto: " + calculadora.getProduto());
                     break;
-                case 3:
+                case 5:
                     JOptionPane.showMessageDialog(null, "Divisão: " + calculadora.getDivisao());
                     break;
 
